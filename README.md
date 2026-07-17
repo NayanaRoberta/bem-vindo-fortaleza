@@ -63,7 +63,7 @@ Este projeto está sendo construído com a colaboração de muitas pessoas.
       <a href="#">
         <img src="https://avatars.githubusercontent.com/u/56744830?v=4" width="100px;" /><br>
         <sub>
-          <b>Jose Kassio</b>
+          <b>Kássio Murilo</b>
         </sub>
       </a>
     </td>
