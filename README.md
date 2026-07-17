@@ -1,10 +1,5 @@
 # Universidade Federal do Cariri 🎓
 
-<<<<<<< HEAD
-
-=======
-
-> > > > > > > 25936a9233f870da1a0f3b2e398f9f41e1e51537
 > > > > > > > Centro de Educação à Distância Curso de Análise e Desenvolvimento de Sistemas
 
 <p align="center">
