@@ -29,7 +29,7 @@ Desenvolver um portal web responsivo que reúna informações sobre os principai
 🚧 Projeto em desenvolvimento.
 
 </p>
-<h2 id="colab">🤝 Collaborators</h2>
+<h2 id="colab">🤝 Collaboratores</h2>
 
 Este projeto está sendo construído com a colaboração de muitas pessoas.
 
