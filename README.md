@@ -1,3 +1,10 @@
+# Universidade Federal do Cariri 🎓
+Centro de Educação à Distância Curso de Análise e Desenvolvimento de Sistemas
+
+<p align="center">
+    <img src="https://drive.google.com/file/d/1Fe56SJhXHGraIKSUYzwjeZ6bJH2a97eR/view?usp=drive_link" width="1000px">
+</p>
+
 # Bem-vindo a Fortaleza!
 
 Portal Web para divulgação do turismo de Fortaleza e região metropolitana.
