@@ -2,7 +2,7 @@
 Centro de Educação à Distância Curso de Análise e Desenvolvimento de Sistemas
 
 <p align="center">
-    <img src="https://drive.google.com/file/d/1Fe56SJhXHGraIKSUYzwjeZ6bJH2a97eR/view?usp=drive_link" width="1000px">
+    <img src="img\logo 1.PNG" width="1000px">
 </p>
 
 # Bem-vindo a Fortaleza!
