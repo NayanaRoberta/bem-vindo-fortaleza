@@ -1,0 +1,119 @@
+:root {
+  --primary: #0066cc;
+  --primary-dark: #004a99;
+  --secondary: #f9a826;
+  --background: #f5f7fa;
+  --white: #ffffff;
+  --text: #333333;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  --transition: 0.3s;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--background);
+  color: #333;
+  line-height: 1.6;
+  margin: 0
+}
+
+header {
+  background-color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  
+}
+header ul {
+  display: flex;
+  gap: 30px;
+  align-items: center
+}
+header span {
+  color: var(--white);
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.caixa-logo {
+  display: flex;
+  align-items: center
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+.lista-menu a {
+  color: var(--white);
+}
+.lista-menu a:hover {
+  color: var(--secondary);
+}
+
+.caixa-logo {
+  position: absolute;
+  left: 30px;
+}
+.img-logo {
+  width: auto;
+  height: 40px;
+}
+
+.caixa-entrar {
+  position: absolute;
+  border-radius: 12px;
+  right: 45px;
+}
+.caixa-entrar a {
+  border-radius: 12px;
+  color: var(--text);
+  background-color: var(--secondary);
+  border-radius: 25px;
+}
+
+.link-entrar {
+  padding: 10px 22px;
+  border-radius: 25px;
+  font-weight: 600;
+}
+header a:hover {
+  background-color: var(--white);
+}
+.caixa-menu-equipe a {
+  color: var(--secondary);
+  cursor:default;
+  background-color: var(--primary-dark);
+  border-radius: 20px;
+  padding: 9px;
+}
+
+.lista_equipe img {
+  height: 100px;
+  width: auto;
+}
+.lista_equipe {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Cria 2 colunas de larguras iguais */
+  gap: 20px;                             /* Espaço entre as linhas e colunas */
+  list-style: none;                      /* Remove as bolinhas da lista */
+  max-width: 500px;                      /* Ajuste a largura total conforme necessário */
+  margin: 40px auto;
+}
+.lista_equipe ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.lista_equipe li {
+  background-color: rgb(195, 194, 194);
+  border: 1px solid rgb(113, 113, 113);
+  border-radius: 12px;
+  text-align: center;
+}
+.caixa-span-logo span {
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+}
