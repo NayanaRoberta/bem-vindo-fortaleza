@@ -1,0 +1,30 @@
+CREATE TABLE public.equipe (
+	nome_integrante varchar NULL,
+	funcao_na_equipe varchar NULL
+)
+CREATE TABLE public.patrocinador (
+	nome_patr varchar NOT NULL,
+	tipo_patroc varchar NOT NULL,
+	contato_patroc varchar NOT NULL,
+	CONSTRAINT patrocinador_pk PRIMARY KEY (nome_patr)
+)
+CREATE TABLE public.usuarios (
+	nome_user varchar NULL,
+	tipo_user varchar NULL,
+	"E-mail_user" varchar NOT NULL,
+	senha_user varchar NOT NULL,
+	CONSTRAINT usuarios_unique UNIQUE ("E-mail_user"),
+	CONSTRAINT usuarios_unique_1 UNIQUE (senha_user)
+)
+CREATE TABLE public.contato (
+	nome_user varchar NOT NULL,
+	"e-mail_user" varchar NOT NULL,
+	mensagem_user varchar NOT NULL,
+	CONSTRAINT contato_unique UNIQUE ("e-mail_user")
+)
+CREATE TABLE public.ponto_tur (
+	nome_ptur varchar NOT NULL,
+	tipo_ptur varchar NOT NULL,
+	contato_ptur varchar NOT NULL,
+	CONSTRAINT ponto_tur_pk PRIMARY KEY (contato_ptur)
+)
