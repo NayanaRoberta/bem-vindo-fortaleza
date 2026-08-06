@@ -179,7 +179,7 @@ header .container {
   color: #222;
 }
 
-btn-primary:hover {
+.btn-primary:hover {
   transform: translateY(-4px);
 }
 
@@ -193,89 +193,331 @@ btn-primary:hover {
   color: #0066cc;
 }
 
-.hero{
+.hero {
+  position: relative;
+  min-height: 100vh;
+
+  background-image: url("../img/praias-perto-de-fortaleza-prea.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+}
+
+.hero-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.hero-content {
+  position: center;
+
+  z-index: 2;
+
+  max-width: 650px;
+
+  color: white;
+}
+
+.hero h1 {
+  font-size: 4rem;
+
+  margin-bottom: 20px;
+
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.3rem;
+
+  margin-bottom: 40px;
+
+  line-height: 1.7;
+}
+
+.hero-buttons {
+  display: flex;
+
+  gap: 20px;
+}
+
+.btn-primary {
+  background: #ffc107;
+
+  color: #222;
+
+  padding: 15px 35px;
+
+  border-radius: 40px;
+
+  font-weight: bold;
+}
+
+.btn-secondary {
+  border: 2px solid white;
+
+  color: white;
+
+  padding: 15px 35px;
+
+  border-radius: 40px;
+}
+
+.hero {
     position: relative;
-    min-height: 100vh;
-
-    background-image: url("../img/praias-perto-de-fortaleza-prea.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    display:flex;
-    align-items:center;
 }
 
-.hero-overlay{
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,.45);
 
-    position:absolute;
-
-    inset:0;
-
-    background:rgba(0,0,0,.45);
-
+    /* IMPORTANTE */
+    pointer-events: none;
 }
 
-.hero-content{
-
-    position:relative;
-
-    z-index:2;
-
-    max-width:650px;
-
-    color:white;
-
+.hero-content {
+    position: relative;
+    z-index: 2;
 }
 
-.hero h1{
+/* 
+   DESTAQUES
+*/
 
-    font-size:4rem;
+.destaques{
+    padding:90px 0;
+    background:#f8f9fb;
+}
+
+.destaques h2{
+
+    text-align:center;
+
+    font-size:2.5rem;
+
+    color:var(--primary);
+
+    margin-bottom:60px;
+}
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+}
+
+.card{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:18px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+    text-align:center;
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+.card h3{
+
+    color:var(--primary);
 
     margin-bottom:20px;
 
-    font-weight:700;
-
+    font-size:1.6rem;
 }
 
-.hero p{
+.card p{
 
-    font-size:1.3rem;
-
-    margin-bottom:40px;
+    color:#555;
 
     line-height:1.7;
-
 }
 
-.hero-buttons{
+#sobre{
 
-    display:flex;
+    padding:100px 0;
 
-    gap:20px;
+    background:linear-gradient(135deg,#0066cc,#004b8d);
 
+    color:white;
+
+    text-align:center;
 }
 
-.btn-primary{
+#sobre h2{
 
-    background:#FFC107;
+    font-size:2.5rem;
 
-    color:#222;
+    margin-bottom:30px;
+}
 
-    padding:15px 35px;
+#sobre p{
+
+    max-width:850px;
+
+    margin:auto;
+
+    font-size:1.2rem;
+
+    line-height:1.8;
+}
+
+.cta{
+
+    padding:90px 0;
+
+    background:#ffc107;
+
+    text-align:center;
+}
+
+.cta h2{
+
+    font-size:2.4rem;
+
+    margin-bottom:20px;
+}
+
+.cta p{
+
+    margin-bottom:35px;
+
+    font-size:1.2rem;
+}
+
+.cta a{
+
+    display:inline-block;
+
+    padding:15px 40px;
+
+    background:#0066cc;
+
+    color:white;
 
     border-radius:40px;
 
     font-weight:bold;
 
+    transition:.3s;
 }
 
-.btn-secondary{
+.cta a:hover{
 
-    border:2px solid white;
+    background:#004b8d;
+}
+
+/*
+   PONTOS TURÍSTICOS
+*/
+
+#pontos-turisticos{
+    padding:100px 0;
+    background:#f5f7fa;
+}
+
+#pontos-turisticos h2{
+    text-align:center;
+    font-size:2.5rem;
+    color:var(--primary);
+    margin-bottom:50px;
+}
+
+.grid-pontos{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+}
+
+.card-ponto{
+
+    background:white;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+
+    transition:.3s;
+}
+
+.card-ponto:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.18);
+}
+
+.card-ponto img{
+
+    width:100%;
+
+    height:240px;
+
+    object-fit:cover;
+}
+
+.card-conteudo{
+
+    padding:25px;
+}
+
+.card-conteudo h3{
+
+    color:var(--primary);
+
+    margin-bottom:15px;
+}
+
+.card-conteudo p{
+
+    margin-bottom:20px;
+
+    color:#555;
+
+    line-height:1.6;
+}
+
+.card-conteudo a{
+
+    display:inline-block;
+
+    background:var(--primary);
 
     color:white;
 
-    padding:15px 35px;
+    padding:10px 20px;
 
-    border-radius:40px;
+    border-radius:30px;
+
+    transition:.3s;
+}
+
+.card-conteudo a:hover{
+
+    background:var(--primary-dark);
+}
