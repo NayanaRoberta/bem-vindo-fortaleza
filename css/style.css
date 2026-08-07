@@ -384,18 +384,25 @@ footer {
    AJUSTES MOBILE
 ========================================= */
 @media(max-width: 768px) {
-    header .container {
-        flex-direction: column;
-        gap: 15px;
+    header {
+        position: relative; /* Tira o cabeçalho do modo fixo no celular */
     }
 
     main {
-        padding-top: 140px; /* Compensa o tamanho maior do menu empilhado */
+        padding-top: 0; /* Remove a compensação de espaço, pois o header já empurra o conteúdo naturalmente */
+    }
+
+    header .container {
+        flex-direction: column;
+        gap: 15px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 
     .menu-desktop ul {
         flex-direction: column;
-        gap: 15px;
+        gap: 20px; /* Espaçamento maior entre os links para facilitar o toque no celular */
+        width: 100%;
     }
 
     .hero-buttons {
