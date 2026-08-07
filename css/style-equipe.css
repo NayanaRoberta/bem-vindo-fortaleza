@@ -1,4 +1,4 @@
-/*base da página*/
+/*Template da página*/
 :root {
   --primary: #0066cc;
   --primary-dark: #004a99;
@@ -14,12 +14,8 @@ body {
   background-color: var(--background);
   color: #333;
   line-height: 1.6;
-  margin: 0;
-  justify-content: center; 
-  align-items: center;     
-  min-height: 100vh;
+  margin: 0
 }
-
 header {
   background-color: var(--primary);
   display: flex;
@@ -27,7 +23,6 @@ header {
   justify-content: center;
   width: 100%;
   height: 100%;
-  
 }
 header ul {
   display: flex;
@@ -39,7 +34,6 @@ header span {
   font-size: 22px;
   font-weight: 700;
 }
-
 .caixa-logo {
   display: flex;
   align-items: center
@@ -56,7 +50,6 @@ a {
 .lista-menu a:hover {
   color: var(--secondary);
 }
-
 .caixa-logo {
   position: absolute;
   left: 30px;
@@ -65,7 +58,6 @@ a {
   width: auto;
   height: 40px;
 }
-
 .caixa-entrar {
   position: absolute;
   border-radius: 12px;
@@ -77,50 +69,13 @@ a {
   background-color: var(--secondary);
   border-radius: 25px;
 }
-
 .link-entrar {
   padding: 10px 22px;
   border-radius: 25px;
   font-weight: 600;
 }
-header a:hover {
+.caixa-entrar a:hover {
   background-color: var(--white);
-}
-
-/*--------------editar o cabeçalho conforme o índicie da página--------------*/
-.caixa-menu-equipe a {
-  color: var(--secondary);
-  cursor:default;
-  background-color: var(--primary-dark);
-  border-radius: 20px;
-  padding: 9px;
-}
-
-/*--------------fim--------------*/
-
-
-.lista_equipe img {
-  height: 100px;
-  width: auto;
-}
-.lista_equipe {
-  text-align: center;
-  display: flex;
-  gap: 20px;                             
-  list-style: none;                      
-  max-width: 500px;                      
-  margin: 40px auto;
-  margin-top: 150px;
-}
-.lista_equipe ul {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-.lista_equipe li {
-  background-color: rgb(195, 194, 194);
-  border: 1px solid rgb(113, 113, 113);
-  border-radius: 12px;
-  text-align: center;
 }
 .caixa-span-logo span {
   font-size: 22px;
@@ -130,4 +85,36 @@ footer span {
     text-align: center;
     display: flex;
     justify-content: center;
+}
+
+/*--------------editar o cabeçalho conforme o índicie da página--------------*/
+.caixa-menu-contato a {
+  color: var(--secondary);
+  background-color: var(--primary-dark);
+  border-radius: 20px;
+  padding: 9px;
+  cursor:default;
+}
+/*--------------fim--------------*/
+
+/* Contatos */
+.lista_contato {
+  text-align: center;
+  display: flex;
+  gap: 20px;                             
+  list-style: none;                      
+  max-width: 500px;                      
+  margin: 40px auto;
+  margin-top: 150px;
+  justify-content: center;
+}
+.lista_contato ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.lista_contato li {
+  background-color: rgb(195, 194, 194);
+  border: 1px solid rgb(113, 113, 113);
+  border-radius: 12px;
+  text-align: center;
 }
