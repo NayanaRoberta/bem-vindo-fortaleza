@@ -1,4 +1,6 @@
-/*base da página*/
+/* =========================================
+   RESET E CONFIGURAÇÕES GERAIS
+========================================= */
 :root {
   --primary: #0066cc;
   --primary-dark: #004a99;
@@ -9,153 +11,208 @@
   --shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   --transition: 0.3s;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: var(--background);
-  color: #333;
+  color: var(--text);
   line-height: 1.6;
-  margin: 0
 }
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* =========================================
+   HEADER RESPONSIVO
+========================================= */
 header {
   background-color: var(--primary);
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
+  justify-content: space-between; /* Distribui os itens naturalmente */
+  padding: 15px 5%;
+  flex-wrap: wrap; /* Permite que o menu pule para baixo se faltar espaço */
+  gap: 15px;
 }
-header ul {
+
+.caixa-logo {
   display: flex;
-  gap: 30px;
-  align-items: center
+  align-items: center;
+  gap: 10px;
 }
-header span {
+
+.img-logo {
+  height: 40px;
+  width: auto;
+}
+
+.caixa-span-logo span {
   color: var(--white);
   font-size: 22px;
   font-weight: 700;
 }
-.caixa-logo {
+
+.lista-menu {
   display: flex;
-  align-items: center
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-ul {
-  list-style-type: none;
-}
-a {
-  text-decoration: none;
-}
+
 .lista-menu a {
   color: var(--white);
+  transition: var(--transition);
 }
+
 .lista-menu a:hover {
   color: var(--secondary);
 }
-.caixa-logo {
-  position: absolute;
-  left: 30px;
-}
-.img-logo {
-  width: auto;
-  height: 40px;
-}
-.caixa-entrar {
-  position: absolute;
-  border-radius: 12px;
-  right: 45px;
-}
-.caixa-entrar a {
-  border-radius: 12px;
-  color: var(--text);
-  background-color: var(--secondary);
-  border-radius: 25px;
-}
-.link-entrar {
-  padding: 10px 22px;
-  border-radius: 25px;
-  font-weight: 600;
-}
-.caixa-entrar a:hover {
-  background-color: var(--white);
-}
-.caixa-span-logo span {
-  font-size: 22px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-footer span {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-}
-/*--------------fim--------------*/
 
 .caixa-menu-pontos-tur a {
   color: var(--secondary);
   background-color: var(--primary-dark);
   border-radius: 20px;
-  padding: 9px;
-  cursor:default;
-}
-.praias {
-    display: flex;
-    flex-direction: column; 
-    align-items: center;    
-    text-align: center;
-}
-.praias h3 {
-  margin-bottom: 16px;    /* Espaço entre o título e o primeiro item */
-  font-size: 1.5rem;
-}
-.lista-praias {
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-}
-.praias img {
-    width: auto;
-    height: 150px;
-    object-fit: cover;
-}
-.praia-do-futuro, .praia-de-iracema, .praia-de-meireles, .praia-do-mucuripe {
-    border: 2px solid gray;
-    padding: 10px 12px;
-    border-radius: 12px;
+  padding: 9px 15px;
+  cursor: default;
 }
 
-.cultura, .parques {
-    display: flex;
-    flex-direction: column; 
-    align-items: center;    
-    text-align: center;
+.link-entrar {
+  background-color: var(--secondary);
+  color: var(--text);
+  padding: 10px 22px;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: var(--transition);
+  display: inline-block;
 }
-.cultura img, .parques img {
-    width: auto;
-    height: 150px;
-    object-fit: cover;
+
+.link-entrar:hover {
+  background-color: var(--white);
 }
-.cultura h3, .parques h3 {
-  margin-bottom: 16px;    /* Espaço entre o título e o primeiro item */
-  font-size: 1.5rem;
+
+/* =========================================
+   MAIN - PONTOS TURÍSTICOS
+========================================= */
+main {
+  padding: 60px 5%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-.lista-cultura, .lista-parques {
-    gap: 15px;
-    display: flex;
-    justify-content: center;
-    width: 100vw;
+
+.praias, .cultura, .parques {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 80px;
 }
-.teatro-jose-de-alencar {
-    width: 50%;
+
+h3 {
+  margin-bottom: 40px;
+  font-size: 2rem;
+  color: var(--primary);
 }
-.dragao-do-mar, .teatro-jose-de-alencar {
-    border: 2px solid gray;
-    padding: 10px 12px;
-    border-radius: 12px;
-    width: 350px; 
+
+h4 {
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+  color: var(--text);
 }
+
+p {
+  margin-bottom: 25px;
+  color: #555;
+  max-width: 800px; /* Evita que o texto fique comprido demais em telas largas */
+}
+
+/* Grid dinâmico para as categorias principais */
+.lista-praias, .lista-cultura, .lista-parques {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  width: 100%;
+}
+
+/* Estrutura limpa dos cards, focada no layout funcional */
+.praia-do-futuro, .praia-de-iracema, .praia-de-meireles, .praia-do-mucuripe,
+.dragao-do-mar, .teatro-jose-de-alencar,
 .parque-da-liberdade, .parque-estadual-coco {
-    border: 2px solid gray;
-    padding: 10px 12px;
-    border-radius: 12px;
-    text-align: center;
-    box-sizing: border-box;
-    width: 350px;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
+
+/* Grid dinâmico para as miniaturas de fotos dentro dos cards */
+[class^="lista-imgs-"] {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+  width: 100%;
+  margin-top: auto; /* Empurra as imagens para o fim do card */
+}
+
+[class^="lista-imgs-"] img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+footer {
+  padding: 20px;
+  background: var(--text);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+}
+
+/* =========================================
+   MOBILE (Telas até 768px)
+========================================= */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .caixa-logo {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+}
+
+/* =========================================
+   QUAIS AJUSTES DE RESPONSIVIDADE FOI FEITO AQUI?
+   1 - ALTERAÇÃO DAS LARGURAS FIXAS: Usar tamanho fixo nas larguras faz 
+   com que telas menores que 350px (como muitos celulares) criem uma barra de rolagem horizontal.
+
+   2- FALTA DE QUEBRA DE LINHA: Foi utilizado o "display:flex" nas listas, 
+   porém, há a ausência do "flex-wrap: wrap"; sem isso, os itens tentam ficar todos na mesma linha espremidos.
+   
+   3- POSICIONAMENTO ABSOLUTO NO HEADER: Usar "position: absolute" para a logo
+   e para o botão de "entrar", faz com que eles passem por cima do menu em telas menores.
+
+   A fim de resolver a responsividade, estruturei o código substituindo as larguras engessadas por um Grid automático. 
+   Também removi aquelas bordas cinzas (border: 2px solid gray;) e marcações desnecessárias para garantir um layout 
+   esteticamente limpo, priorizando a funcionalidade e o conteúdo.
+
+   :)
+========================================= */

@@ -118,3 +118,22 @@ footer span {
   border-radius: 12px;
   text-align: center;
 }
+
+/*--------------Ajuste Formulários de Contato--------------*/
+
+@media (max-width: 768px) {
+    .formulario-contato, .info-contato {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .formulario-contato input, 
+    .formulario-contato textarea {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 15px;
+        /* Prioriza a funcionalidade no mobile */
+    }
+}

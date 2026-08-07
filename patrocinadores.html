@@ -9,74 +9,69 @@
 <body>
      <header>
         <div class="caixa-logo">
-            <div class="caixa-img-logo"> 
-            <img src="img/logo inicial.png" alt="" class="img-logo">
-            </div>
+            <img src="img/logo inicial.png" alt="Logo Bem-vindo a Fortaleza" class="img-logo">
             <div class="caixa-span-logo">
-            <span> Bem-Vindo a Fortaleza </span>
+                <span> Bem-Vindo a Fortaleza </span>
             </div>
         </div>
         <div class="caixa-lista-menu">
             <ul class="lista-menu">
-                <li>
-                <div class="caixa-menu-inicio">
-                    <a href="#inicio">Início</a>
-                </div>
-                </li>
-                <li>
-                <div class="caixa-menu-sobre">
-                    <a href="#sobre">Sobre</a>
-                </div>
-                </li>
-                <li>
-                <div class="caixa-menu-pontos-tur">
-                    <a href="#pontos-turisticos">Pontos Turísticos</a>
-                </div>
-                </li>
-                <li>
-                <div class="caixa-menu-equipe">
-                    <a href="#equipe">Equipe</a>
-                </div>
-                </li>
-                <li>
-                <div class="caixa-menu-patrocinadores">
-                    <a href="#patrocinadores">Patrocinadores</a>
-                </div>
-                </li>
-                <li>
-                <div class="caixa-menu-contato">
-                    <a href="#contato">Contato</a>
-                </div>
-                </li>
+                <li><a href="index.html#inicio">Início</a></li>
+                <li><a href="index.html#sobre">Sobre</a></li>
+                <li><a href="pontos-turisticos.html">Pontos Turísticos</a></li>
+                <li><a href="equipe.html">Equipe</a></li>
+                <li class="caixa-menu-patrocinadores"><a href="patrocinadores.html">Patrocinadores</a></li>
+                <li><a href="contato.html">Contato</a></li>
             </ul>
         </div>
         <div class="caixa-entrar">
             <a href="pages/login.html" target="_blank" rel="noopener noreferrer" class="link-entrar">Entrar</a>
         </div>
     </header>
+
     <main>
-        <div class="patrocinadores">
+        <section class="patrocinadores container">
+            <h3>Nossos Patrocinadores</h3>
             <ul class="lista-patrocinadores">
-                <div class="patrocinador1">
-                    <li>
-                        <h4>Chico do Carangueijo</h4>
-                        <div class="patrocinador1-img-logo">
-                            <img src="img/patrocinador1.png" alt="" class="img-patrocinador1">
-                        </div>
-                    </li>
-                </div>
-                <div class="patrocinador2"></div>
-                    <li>                   
-                        <h4>Dragão do Mar</h4>
-                        <div class="patrocinador2-img-logo">
-                            <img src="img/patrocinador2.png" alt="" class="img-patrocinador2">
-                        </div>
-                    </li>
-                </div>
+                <li class="card-patrocinador">
+                    <h4>Chico do Caranguejo</h4>
+                    <!-- Ajustei o caminho da imagem para bater com a estrutura do seu projeto -->
+                    <img src="img/patrocinadores/patrocinador1.png" alt="Logo Chico do Caranguejo" class="img-patrocinador">
+                </li>
+                
+                <li class="card-patrocinador">                   
+                    <h4>Dragão do Mar</h4>
+                    <img src="img/patrocinadores/patrocinador2.png" alt="Logo Dragão do Mar" class="img-patrocinador">
+                </li>
+
+                <!-- Exemplo de como adicionar mais um sem quebrar o layout -->
+                <li class="card-patrocinador">                   
+                    <h4>Beach Park</h4>
+                    <img src="img/patrocinadores/patrocinador3.jpg" alt="Logo Beach Park" class="img-patrocinador">
+                </li>
             </ul>
+        </section>
     </main>
+
     <footer>
-        <span> @ Todos os direitos Reservados </span>
+        <span> &copy; Todos os direitos Reservados </span>
     </footer>
 </body>
 </html>
+
+
+
+/* =========================================
+   QUAIS AJUSTES FORAM FEITOS AQUI?
+
+    1 - CORREÇÃO SEMÂNTICA DE LISTAS: O código original possuía tags "div (div class="patrocinador1")" soltas
+    Como filhas diretas da tag "ul". O HTML foi corrigido para que apenas tags "li" sejam filhas diretas da "ul", 
+    respeitando as regras de semântica da W3C.
+
+    2- Redução de Aninhamento (Clean Code): Foram removidas "divs" desnecessárias que envolviam as imagens dos patrocinadores.
+    Um código com menos níveis de profundidade é processado mais rápido pelo navegador e é mais fácil de dar manutenção.
+
+    3- Classe de Contenção: A classe .container foi adicionada à seção principal ("section class="patrocinadores container") 
+    para garantir que o conteúdo não encoste nas bordas em telas de celulares e não estique infinitamente em monitores ultrawide.
+   
+========================================= */

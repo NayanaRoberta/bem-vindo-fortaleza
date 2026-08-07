@@ -1,3 +1,6 @@
+/* =========================================
+   RESET E CONFIGURAÇÕES GERAIS
+========================================= */
 :root {
   --primary: #0066cc;
   --primary-dark: #004a99;
@@ -8,103 +11,232 @@
   --shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   --transition: 0.3s;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: var(--background);
-  color: #333;
+  color: var(--text);
   line-height: 1.6;
-  margin: 0
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Garante que o footer fique no fundo */
 }
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* =========================================
+   CONTAINER
+========================================= */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* =========================================
+   HEADER RESPONSIVO
+========================================= */
 header {
   background-color: var(--primary);
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
+  justify-content: space-between;
+  padding: 15px 5%;
+  flex-wrap: wrap;
+  gap: 15px;
+  box-shadow: var(--shadow);
 }
-header ul {
+
+.caixa-logo {
   display: flex;
-  gap: 30px;
-  align-items: center
+  align-items: center;
+  gap: 12px;
 }
-header span {
+
+.img-logo {
+  height: 40px;
+  width: auto;
+}
+
+.caixa-span-logo span {
   color: var(--white);
   font-size: 22px;
   font-weight: 700;
 }
-.caixa-logo {
+
+.lista-menu {
   display: flex;
-  align-items: center
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-ul {
-  list-style-type: none;
-}
-a {
-  text-decoration: none;
-}
+
 .lista-menu a {
   color: var(--white);
+  font-weight: 500;
+  transition: var(--transition);
 }
+
 .lista-menu a:hover {
   color: var(--secondary);
 }
-.caixa-logo {
-  position: absolute;
-  left: 30px;
+
+.caixa-menu-patrocinadores {
+  background-color: var(--primary-dark);
+  border-radius: 20px;
+  padding: 8px 15px;
 }
-.img-logo {
-  width: auto;
-  height: 40px;
+
+.caixa-menu-patrocinadores a {
+  color: var(--secondary);
 }
-.caixa-entrar {
-  position: absolute;
-  border-radius: 12px;
-  right: 45px;
-}
-.caixa-entrar a {
-  border-radius: 12px;
-  color: var(--text);
-  background-color: var(--secondary);
-  border-radius: 25px;
-}
+
 .link-entrar {
+  background-color: var(--secondary);
+  color: var(--text);
   padding: 10px 22px;
   border-radius: 25px;
   font-weight: 600;
-}
-.caixa-entrar a:hover {
-  background-color: var(--white);
-}
-.caixa-menu-patrocinadores {
-    background-color: var(--primary-dark);
-    border-radius: 20px;
-    padding: 9px;
-    cursor:default;
-}
-.caixa-menu-patrocinadores a {
-    color: var(--secondary);
-}
-footer span {
-    text-align: center;
-    display: flex;
-    justify-content: center;
+  transition: var(--transition);
+  display: inline-block;
 }
 
-body img {
-    width: auto;
-    height: 160px;
-    align-items: center;
-} 
-.patrocinadores ul {
-    display: flex;
-    flex-direction: column;   
-    align-items: center;      
-    justify-content: center;  
-    width: 100%;
-    text-align: center;       
+.link-entrar:hover {
+  background-color: var(--white);
 }
-.patrocinadores li {
-    border: 2px solid rgb(113, 113, 113);
-    border-radius: 12px;
+
+/* =========================================
+   MAIN - PATROCINADORES
+========================================= */
+main {
+  flex: 1;
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+.patrocinadores h3 {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--primary);
+  margin-bottom: 50px;
+}
+
+/* Aplicação do Grid: Distribuindo os itens de forma responsiva */
+.lista-patrocinadores {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+}
+
+/* Estrutura visualmente limpa */
+.card-patrocinador {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: transparent;
+  padding: 20px;
+  transition: var(--transition);
+}
+
+.card-patrocinador:hover {
+  transform: translateY(-5px);
+}
+
+.card-patrocinador h4 {
+  color: var(--text);
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.img-patrocinador {
+  max-width: 180px;
+  height: auto;
+  object-fit: contain; /* Impede distorção do logo */
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+footer {
+  padding: 20px;
+  background: var(--text);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+/* =========================================
+   MOBILE (Telas até 768px)
+========================================= */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .caixa-logo {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+}
+
+/* =========================================
+   QUAIS AJUSTES FORAM FEITOS AQUI?
+
+    1 - Remoção de Posicionamento Absoluto no Header: O position: absolute 
+    usado na logo e no botão "Entrar" foi removido. Essa propriedade tirava 
+    os elementos do fluxo normal da página, causando sobreposição no menu em 
+    telas menores. O alinhamento agora é feito pelo Flexbox com 
+    justify-content: space-between.
+
+    2- CSS Grid com Auto-fit (Motor Responsivo): A classe .lista-patrocinadores 
+    abandonou o Flexbox forçado em coluna e passou a usar display: grid. 
+    A regra grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)) 
+    calcula automaticamente quantas colunas cabem na tela. Se a tela 
+    encolher para menos de 220px por item, o navegador quebra a linha 
+    sozinho, eliminando a necessidade de várias Media Queries.
+
+    3- Design Clean: A regra border: 2px solid rgb(113, 113, 113) dos 
+    itens da lista foi deletada. O objetivo foi aplicar um design 
+    funcional e minimalista, priorizando a legibilidade e removendo 
+    elementos decorativos ou linhas de fundo que pudessem causar 
+    poluição visual ao redor dos logos
+
+    4- Proporção das Imagens: A propriedade object-fit: contain; 
+    foi adicionada aos logos. Diferente do cover (que corta a imagem), 
+    o contain garante que a imagem do patrocinador caiba inteira dentro 
+    do espaço designado, sem distorcer ou achatar as proporções originais
+    da marca.
+
+
+========================================= */
+
+
