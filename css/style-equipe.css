@@ -1,3 +1,4 @@
+/*base da página*/
 :root {
   --primary: #0066cc;
   --primary-dark: #004a99;
@@ -13,7 +14,10 @@ body {
   background-color: var(--background);
   color: #333;
   line-height: 1.6;
-  margin: 0
+  margin: 0;
+  justify-content: center; 
+  align-items: center;     
+  min-height: 100vh;
 }
 
 header {
@@ -82,6 +86,8 @@ a {
 header a:hover {
   background-color: var(--white);
 }
+
+/*--------------editar o cabeçalho conforme o índicie da página--------------*/
 .caixa-menu-equipe a {
   color: var(--secondary);
   cursor:default;
@@ -90,18 +96,21 @@ header a:hover {
   padding: 9px;
 }
 
+/*--------------fim--------------*/
+
+
 .lista_equipe img {
   height: 100px;
   width: auto;
 }
 .lista_equipe {
   text-align: center;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Cria 2 colunas de larguras iguais */
-  gap: 20px;                             /* Espaço entre as linhas e colunas */
-  list-style: none;                      /* Remove as bolinhas da lista */
-  max-width: 500px;                      /* Ajuste a largura total conforme necessário */
+  display: flex;
+  gap: 20px;                             
+  list-style: none;                      
+  max-width: 500px;                      
   margin: 40px auto;
+  margin-top: 150px;
 }
 .lista_equipe ul {
   display: grid;
@@ -116,4 +125,9 @@ header a:hover {
 .caixa-span-logo span {
   font-size: 22px;
   font-family: Arial, Helvetica, sans-serif;
+}
+footer span {
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }
