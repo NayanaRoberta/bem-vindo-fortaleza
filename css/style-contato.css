@@ -98,7 +98,7 @@ footer span {
 /*--------------fim--------------*/
 
 /* Contatos */
-.lista_contato {
+.lista-contato {
   text-align: center;
   display: flex;
   gap: 20px;                             
@@ -112,28 +112,15 @@ footer span {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
-.lista_contato li {
+.lista-contato img {
+  height: 180px;
+  width: 200px;
+  border-radius: 12px;
+ 
+}
+.lista-contato li {
   background-color: rgb(195, 194, 194);
   border: 1px solid rgb(113, 113, 113);
   border-radius: 12px;
   text-align: center;
-}
-
-/*--------------Ajuste Formulários de Contato--------------*/
-
-@media (max-width: 768px) {
-    .formulario-contato, .info-contato {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        padding: 15px;
-    }
-
-    .formulario-contato input, 
-    .formulario-contato textarea {
-        width: 100%;
-        max-width: 100%;
-        margin-bottom: 15px;
-        /* Prioriza a funcionalidade no mobile */
-    }
 }
