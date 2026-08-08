@@ -118,3 +118,71 @@ footer span {
   border-radius: 12px;
   text-align: center;
 }
+
+
+/* =========================================
+   ALTERAÇÃO - SEÇÃO DA EQUIPE
+========================================= */
+main {
+    padding: 80px 5%;
+    display: flex;
+    justify-content: center;
+    background: #f5f7fa; /* Fundo limpo que ajuda no contraste */
+}
+
+.section-equipe {
+    width: 100%;
+    max-width: 1100px; /* Limita a largura para não esticar demais em monitores grandes */
+}
+
+/* O Grid que organiza as pessoas lado a lado */
+.lista_equipe {
+    display: grid;
+    /* Cria colunas automáticas de no mínimo 220px */
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilização minimalista de cada membro */
+.lista_equipe li div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: transparent; 
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.lista_equipe li div:hover {
+    transform: translateY(-5px); /* Efeito suave ao passar o mouse */
+}
+
+/* O truque para deixar as fotos redondas e padronizadas */
+.lista_equipe img {
+    width: 160px; /* Largura fixa */
+    height: 160px; /* Altura igual à largura */
+    object-fit: cover; /* Corta o excesso da foto sem amassar ou esticar */
+    border-radius: 50%; /* Transforma o quadrado em um círculo perfeito */
+    margin-bottom: 20px;
+    /* Sem bordas ou sombras pesadas para manter o visual limpo */
+}
+
+/* Estilo do Nome */
+.lista_equipe p:nth-of-type(1) {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #0066cc; /* Cor primária do seu projeto */
+    margin-bottom: 5px;
+    line-height: 1.2;
+}
+
+/* Estilo do Cargo (Desenvolvedor) */
+.lista_equipe p:nth-of-type(2) {
+    font-size: 0.95rem;
+    color: #666;
+    text-transform: uppercase; /* Deixa as letras maiúsculas para dar um ar profissional */
+    letter-spacing: 1px; /* Espaço elegante entre as letras */
+}
