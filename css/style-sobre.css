@@ -1,3 +1,6 @@
+/* =========================================
+   RESET E CONFIGURAÇÕES GERAIS
+========================================= */
 :root {
   --primary: #0066cc;
   --primary-dark: #004a99;
@@ -5,89 +8,166 @@
   --background: #f5f7fa;
   --white: #ffffff;
   --text: #333333;
-  --shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   --transition: 0.3s;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* O Flexbox aqui garante que o footer fique sempre no fundo */
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: var(--background);
-  color: #333;
+  color: var(--text);
   line-height: 1.6;
-  margin: 0
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
+
+a { text-decoration: none; }
+ul { list-style-type: none; }
+
+/* =========================================
+   HEADER RESPONSIVO
+========================================= */
 header {
   background-color: var(--primary);
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
+  justify-content: space-between;
+  padding: 15px 5%;
+  flex-wrap: wrap;
+  gap: 15px;
 }
-header ul {
+
+.caixa-logo {
   display: flex;
-  gap: 30px;
-  align-items: center
+  align-items: center;
+  gap: 10px;
 }
-header span {
+
+.img-logo {
+  height: 40px;
+  width: auto;
+}
+
+.caixa-span-logo span {
   color: var(--white);
   font-size: 22px;
   font-weight: 700;
 }
-.caixa-logo {
+
+.lista-menu {
   display: flex;
-  align-items: center
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-ul {
-  list-style-type: none;
-}
-a {
-  text-decoration: none;
-}
+
 .lista-menu a {
   color: var(--white);
+  transition: var(--transition);
 }
+
 .lista-menu a:hover {
   color: var(--secondary);
 }
-.caixa-logo {
-  position: absolute;
-  left: 30px;
+
+.caixa-menu-sobre {
+  background-color: var(--primary-dark);
+  border-radius: 20px;
+  padding: 9px 15px;
 }
-.img-logo {
-  width: auto;
-  height: 40px;
+
+.caixa-menu-sobre a {
+  color: var(--secondary);
 }
-.caixa-entrar {
-  position: absolute;
-  border-radius: 12px;
-  right: 45px;
-}
-.caixa-entrar a {
-  border-radius: 12px;
-  color: var(--text);
-  background-color: var(--secondary);
-  border-radius: 25px;
-}
+
 .link-entrar {
+  background-color: var(--secondary);
+  color: var(--text);
   padding: 10px 22px;
   border-radius: 25px;
   font-weight: 600;
+  transition: var(--transition);
+  display: inline-block;
 }
-.caixa-entrar a:hover {
+
+.link-entrar:hover {
   background-color: var(--white);
 }
 
-main h4, main p, footer span {
-    text-align: center;
-    display: flex;
+/* =========================================
+   MAIN - CONTEÚDO SOBRE
+========================================= */
+main {
+  flex: 1; /* Ocupa todo o espaço vazio e empurra o footer para baixo */
+  padding: 60px 5%;
+  display: flex;
+  justify-content: center;
+}
+
+.container-sobre {
+  width: 100%;
+  max-width: 800px; /* Limita a largura para leitura confortável */
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+/* Blocos de texto limpos e divididos */
+.card-texto {
+  background-color: var(--white);
+  padding: 40px;
+  border-radius: 8px; /* Formato limpo e funcional */
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.03); /* Sombra quase invisível só para descolar do fundo */
+}
+
+.card-texto h2 {
+  color: var(--primary);
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.card-texto p {
+  color: #555;
+  font-size: 1.1rem;
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+footer {
+  padding: 20px;
+  background: var(--text);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
     justify-content: center;
+    text-align: center;
+  }
+  
+  .caixa-logo {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .card-texto {
+    padding: 25px; /* Reduz o espaçamento interno na tela menor */
+  }
 }
-/*--------------editar o cabeçalho conforme o índicie da página--------------*/
-.caixa-menu-sobre a {
-    background-color: var(--primary-dark);
-    border-radius: 20px;
-    padding: 9px;
-    color: var(--secondary);
-    cursor: default;
-}
-/*--------------fim--------------*/

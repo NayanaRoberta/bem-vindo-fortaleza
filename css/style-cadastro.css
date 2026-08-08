@@ -1,0 +1,146 @@
+/* =========================================
+   RESET E CONFIGURAÇÕES GERAIS
+========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff; /* Fundo branco e limpo */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* =========================================
+   CAIXA DE CADASTRO
+========================================= */
+.cadastro-container {
+    width: 100%;
+    max-width: 450px; /* Um pouco mais largo que o login para acomodar mais campos confortavelmente */
+    padding: 20px;
+}
+
+.cadastro-box {
+    background: transparent;
+    padding: 20px;
+}
+
+.logo-cadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.img-logo-cadastro {
+    width: 70px;
+    height: auto;
+}
+
+.logo-cadastro h2 {
+    color: #0066cc;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+/* =========================================
+   FORMULÁRIO MINIMALISTA
+========================================= */
+.cadastro-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.input-group label {
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #777;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 2px solid #eaeaea; /* Foco na funcionalidade, sem bordas pesadas */
+    background: transparent;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-group input:focus {
+    border-bottom-color: #0066cc; /* Feedback claro de interação */
+}
+
+/* =========================================
+   BOTÕES E LINKS
+========================================= */
+.btn-cadastrar {
+    background-color: #0066cc;
+    color: #ffffff;
+    border: none;
+    padding: 15px;
+    border-radius: 4px;
+    font-size: 1.05rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 15px;
+}
+
+.btn-cadastrar:hover {
+    background-color: #004a99;
+}
+
+.cadastro-footer {
+    margin-top: 35px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cadastro-footer p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.link-login {
+    color: #f9a826;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.link-login:hover {
+    color: #e0961b;
+}
+
+.link-voltar {
+    color: #888;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.link-voltar:hover {
+    color: #0066cc;
+}

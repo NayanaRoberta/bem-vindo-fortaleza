@@ -4,78 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style-sobre.css">
-    <title>Sobre</title>
+    <title>Sobre - Bem-vindo a Fortaleza</title>
 </head>
 <body>
-    <header>
+     <header>
         <div class="caixa-logo">
-            <div class="caixa-img-logo"> 
-            <img src="img/logo inicial.png" alt="" class="img-logo">
-            </div>
+            <img src="img/logo inicial.png" alt="Logo Bem-vindo a Fortaleza" class="img-logo">
             <div class="caixa-span-logo">
-            <span> Bem-Vindo a Fortaleza </span>
+                <span> Bem-Vindo a Fortaleza </span>
             </div>
         </div>
         <div class="caixa-lista-menu">
             <ul class="lista-menu">
-                <li>
-                <div class="caixa-menu-inicio">
-                    <a href="index.html">Início</a>
-                </div>
-                </li>
-                <li>
-                <div class="caixa-menu-sobre">
-                    <a href="sobre.html">Sobre</a>
-                </div>
-                </li>
-                <li>
-                <div class="caixa-menu-pontos-tur">
-                    <a href="pontos-turisticos.html">Pontos Turísticos</a>
-                </div>
-                </li>
-                <li>
-                <div class="caixa-menu-equipe">
-                    <a href="equipe.html">Equipe</a>
-                </div>
-                </li>
-                <li>
-                <div class="caixa-menu-patrocinadores">
-                    <a href="patrocinadores.html">Patrocinadores</a>
-                </div>
-                </li>
-                <li>
-                <div class="caixa-menu-contato">
-                    <a href="contato.html">Contato</a>
-                </div>
-                </li>
+                <li><a href="index.html">Início</a></li>
+                <!-- A classe que marca o botão ativo está no "Sobre" -->
+                <li class="caixa-menu-sobre"><a href="sobre.html">Sobre</a></li>
+                <li><a href="pontos-turisticos.html">Pontos Turísticos</a></li>
+                <li><a href="equipe.html">Equipe</a></li>
+                <li><a href="patrocinadores.html">Patrocinadores</a></li>
+                <li><a href="contato.html">Contato</a></li>
             </ul>
         </div>
         <div class="caixa-entrar">
             <a href="pages/login.html" target="_blank" rel="noopener noreferrer" class="link-entrar">Entrar</a>
         </div>
     </header>
+
     <main>
-        <section class="section-sobre">
-            <div class="caixa-texto-sobre">
-                <div class="caixa-sobre-nos">
-                    <h4>Sobre Nós</h4>
-                    <p> 
-                        Nós somos uma equipe, formada por quatro membros.
-                        Esse projeto possui a finalidade de concluir a disciplina de programação web, não possui qualque finalidade financeira
-                    </p>
-                </div>
-                <div class="caixa-sobre-fortaleza">
-                    <h4>Sobre Fortaleza</h4>
-                    <p>
-                        Fortaleza, capital do Ceará, é a cidade mais populosa do Nordeste e um vibrante centro urbano com mais de 2,4 milhões de habitantes.
-                        Conhecida como a "Terra do Sol", a metrópole combina um litoral deslumbrante de clima tropical com rica herança cultural, forte economia no setor de serviços e um povo muito acolhedor.
-                    </p>
-                </div>
-            </div>
+        <section class="container-sobre">
+            <!-- Bloco 1 -->
+            <article class="card-texto">
+                <h2>Sobre Nós</h2>
+                <p>Nós somos uma equipe formada por quatro membros. Esse projeto possui a finalidade de concluir a disciplina de programação web, não possui qualquer finalidade financeira.</p>
+            </article>
+
+            <!-- Bloco 2 -->
+            <article class="card-texto">
+                <h2>Sobre Fortaleza</h2>
+                <p>Fortaleza, capital do Ceará, é a cidade mais populosa do Nordeste e um vibrante centro urbano com mais de 2,4 milhões de habitantes. Conhecida como a "Terra do Sol", a metrópole combina um litoral deslumbrante de clima tropical com rica herança cultural, forte economia no setor de serviços e um povo muito acolhedor.</p>
+            </article>
         </section>
     </main>
+
     <footer>
-        <span> @ Todos os direitos Reservados </span>
+        <span> Bem-vindo a Fortaleza &copy; Todos os direitos Reservados </span>
     </footer>
 </body>
 </html>

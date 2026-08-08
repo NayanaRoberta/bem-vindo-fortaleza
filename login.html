@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Bem-vindo a Fortaleza</title>
+    <!-- O caminho volta uma pasta (../) para acessar a pasta css -->
+    <link rel="stylesheet" href="css/style-login.css">
+</head>
+<body>
+    <main class="login-container">
+        <div class="login-box">
+            <div class="logo-login">
+                <img src="img/logo inicial.png" alt="Logo Bem-vindo a Fortaleza" class="img-logo-login">
+                <h2>Acesso ao Sistema - Bem vindo a Fortaleza</h2>
+            </div>
+            
+            <form action="#" method="POST" class="login-form">
+                <div class="input-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required placeholder="Digite seu e-mail">
+                </div>
+                
+                <div class="input-group">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" required placeholder="Digite sua senha">
+                </div>
+                
+                <button type="submit" class="btn-entrar">Entrar</button>
+            </form>
+            
+            <div class="login-footer">
+                <p style="margin-bottom: 15px; color: #555;">Ainda não tem conta? <a href="cadastro.html" style="color: #f9a826; font-weight: bold;">Cadastre-se</a></p>
+                <a href="index.html" class="link-voltar">← Voltar para a página inicial</a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
