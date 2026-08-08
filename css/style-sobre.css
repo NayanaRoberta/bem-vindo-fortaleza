@@ -76,36 +76,18 @@ a {
 .caixa-entrar a:hover {
   background-color: var(--white);
 }
-.caixa-menu-sobre {
-    background-color: var(--primary-dark);
-    border-radius: 20px;
-    padding: 9px;
-    cursor:default;
-}
-.caixa-menu-sobre a {
-    color: var(--secondary);
-}
+
 main h4, main p, footer span {
     text-align: center;
     display: flex;
     justify-content: center;
 }
-
-/* Prevenção a fim de garantir a perfeita rolagem entre imagens.*/
-
-@media (max-width: 768px) {
-    .formulario-contato, .info-contato {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        padding: 15px;
-    }
-
-    .formulario-contato input, 
-    .formulario-contato textarea {
-        width: 100%;
-        max-width: 100%;
-        margin-bottom: 15px;
-        /* Prioriza a funcionalidade no mobile */
-    }
+/*--------------editar o cabeçalho conforme o índicie da página--------------*/
+.caixa-menu-sobre a {
+    background-color: var(--primary-dark);
+    border-radius: 20px;
+    padding: 9px;
+    color: var(--secondary);
+    cursor: default;
 }
+/*--------------fim--------------*/
