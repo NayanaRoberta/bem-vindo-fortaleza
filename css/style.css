@@ -82,11 +82,12 @@ main {
 .logo {
     display: flex;
     align-items: center;
-    gap: 12px;
 }
 
 .logo img {
-    width: 50px;
+    width: 170px;
+    height: auto;
+    display: block;
 }
 
 .logo span {
@@ -134,10 +135,18 @@ main {
     min-height: calc(100vh - 80px);
     display: flex;
     align-items: center;
-    background-image: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)), url("../img/praias-perto-de-fortaleza-prea.jpg");
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.40),
+            rgba(0, 0, 0, 0.40)
+        ),
+        url("../img/pontos-tur/praias/praias-perto-de-fortaleza-lagoinha-1.jpg");
+
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
     padding: 60px 0;
 }
 

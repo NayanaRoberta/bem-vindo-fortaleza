@@ -1,165 +1,663 @@
-<!doctype html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
+<!DOCTYPE html>
+<html lang="pt-BR">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
 
-    <title>Bem-vindo a Fortaleza</title>
+  <meta charset="UTF-8">
 
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
-  <body>
-    <header>
+  <meta
+    name="description"
+    content="Bem-vindo a Fortaleza. Descubra praias, cultura, gastronomia e os principais pontos turísticos da capital do Ceará."
+  >
+
+  <meta
+    name="author"
+    content="Bem-vindo a Fortaleza"
+  >
+
+  <title>Bem-vindo a Fortaleza</title>
+
+  <!-- ==============================
+       CSS PRINCIPAL
+  =============================== -->
+
+  <link
+    rel="stylesheet"
+    href="css/style.css"
+  >
+
+</head>
+
+
+<body>
+
+
+  <!-- ==============================
+       CABEÇALHO
+  =============================== -->
+
+  <header class="header">
+
+    <div class="container">
+
+
+      <!-- LOGO -->
+
+      <a href="index.html" class="logo">
+    <img src="img/logo inicial.png" alt="Bem-vindo a Fortaleza">
+      </a>
+
+
+      <!-- MENU -->
+
+      <nav
+        class="menu-desktop"
+        aria-label="Menu principal"
+      >
+
+        <ul>
+
+          <li>
+            <a href="index.html">
+              Início
+            </a>
+          </li>
+
+          <li>
+            <a href="sobre.html">
+              Sobre
+            </a>
+          </li>
+
+          <li>
+            <a href="pontos-turisticos.html">
+              Pontos Turísticos
+            </a>
+          </li>
+
+          <li>
+            <a href="equipe.html">
+              Equipe
+            </a>
+          </li>
+
+          <li>
+            <a href="patrocinadores.html">
+              Patrocinadores
+            </a>
+          </li>
+
+          <li>
+            <a href="contato.html">
+              Contato
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+      <!-- BOTÃO LOGIN -->
+
+      <a
+        href="login.html"
+        class="btn-login"
+      >
+        Entrar
+      </a>
+
+
+    </div>
+
+  </header>
+
+
+
+  <!-- ==============================
+       CONTEÚDO PRINCIPAL
+  =============================== -->
+
+  <main>
+
+
+    <!-- ==============================
+         SEÇÃO HERO
+    =============================== -->
+
+    <section
+      id="inicio"
+      class="hero"
+    >
+
+      <div class="hero-overlay"></div>
+
+
       <div class="container">
-        <a href="index.html" class="logo">
-          <img src="img/logo inicial.png" alt="Logo Bem-vindo a Fortaleza" />
-          <span>Bem-vindo a Fortaleza!</span>
-        </a>
 
-        <nav class="menu-desktop">
-          <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="pontos-turisticos.html">Pontos Turísticos</a></li>
-            <li><a href="equipe.html">Equipe</a></li>
-            <li><a href="patrocinadores.html">Patrocinadores</a></li>
-            <li><a href="contato.html">Contato</a></li>
-          </ul>
-        </nav>
+        <div class="hero-content">
 
-        <a href="login.html" class="btn-login">Entrar</a>
-      </div>
-    </header>
 
-    <main>
-      <section id="inicio" class="hero">
-        <div class="hero-overlay"></div>
+          <h1>
+            Bem-vindo a Fortaleza
+          </h1>
 
-        <div class="container">
-          <div class="hero-content">
-            <h1>Bem-vindo a Fortaleza</h1>
-
-            <p>
-              Descubra praias paradisíacas, cultura vibrante, gastronomia típica
-              e experiências inesquecíveis na capital do Ceará.
-            </p>
-
-            <div class="hero-buttons">
-              <a href="#pontos-turisticos" class="btn-primary">
-                Explorar Destinos
-              </a>
-
-              <a href="#sobre" class="btn-secondary"> Saiba Mais </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="destaques">
-        <div class="container">
-          <h2>Descubra Fortaleza</h2>
-
-          <div class="cards">
-            <article>
-              <h3>Praias</h3>
-
-              <p>Conheça algumas das praias mais bonitas do Ceará.</p>
-            </article>
-
-            <article>
-              <h3>Cultura</h3>
-
-              <p>Museus, centros culturais e eventos tradicionais.</p>
-            </article>
-
-            <article>
-              <h3>Gastronomia</h3>
-
-              <p>Sabores típicos da culinária cearense.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="sobre">
-        <div class="container">
-          <h2>Sobre Fortaleza</h2>
 
           <p>
-            Fortaleza é uma das principais cidades turísticas do Brasil,
-            conhecida por suas belas praias, rica cultura, hospitalidade e
-            excelente gastronomia.
+            Descubra praias paradisíacas,
+            cultura vibrante, gastronomia típica
+            e experiências inesquecíveis na
+            capital do Ceará.
           </p>
+
+
+          <div class="hero-buttons">
+
+
+            <!-- BOTÃO EXPLORAR DESTINOS -->
+
+            <a
+              href="#pontos-turisticos"
+              class="btn-primary"
+            >
+              Explorar Destinos
+            </a>
+
+
+            <!-- BOTÃO SAIBA MAIS -->
+
+            <a
+              href="#sobre"
+              class="btn-secondary"
+            >
+              Saiba Mais
+            </a>
+
+
+          </div>
+
+
         </div>
-      </section>
 
-      <section id="pontos-turisticos">
-        <div class="container">
-          <h2>Pontos Turísticos em Destaque</h2>
+      </div>
 
-          <div class="grid-pontos">
+    </section>
 
-    <article class="card-ponto">
-        <img src="img/praias-perto-de-fortaleza-aguas-brancas.jpg" alt="Praia de Águas Brancas">
 
-        <div class="card-conteudo">
-            <h3>Praia de Águas Brancas</h3>
 
-            <p>Um lugar tranquilo, com águas cristalinas e paisagens encantadoras.</p>
+    <!-- ==============================
+         DESTAQUES
+    =============================== -->
 
-            <a href="#">Saiba mais</a>
+    <section class="destaques">
+
+      <div class="container">
+
+
+        <h2>
+          Descubra Fortaleza
+        </h2>
+
+
+        <div class="cards">
+
+
+          <!-- PRAIAS -->
+
+          <article class="card">
+
+            <h3>
+              Praias
+            </h3>
+
+            <p>
+              Conheça algumas das praias
+              mais bonitas do Ceará.
+            </p>
+
+            <a
+              href="pontos-turisticos.html"
+              class="card-link"
+            >
+              Conhecer praias
+            </a>
+
+          </article>
+
+
+          <!-- CULTURA -->
+
+          <article class="card">
+
+            <h3>
+              Cultura
+            </h3>
+
+            <p>
+              Museus, centros culturais e
+              eventos tradicionais.
+            </p>
+
+            <a
+              href="pontos-turisticos.html"
+              class="card-link"
+            >
+              Conhecer cultura
+            </a>
+
+          </article>
+
+
+          <!-- GASTRONOMIA -->
+
+          <article class="card">
+
+            <h3>
+              Gastronomia
+            </h3>
+
+            <p>
+              Sabores típicos da culinária
+              cearense.
+            </p>
+
+            <a
+              href="pontos-turisticos.html"
+              class="card-link"
+            >
+              Descobrir sabores
+            </a>
+
+          </article>
+
+
         </div>
-    </article>
 
-    <article class="card-ponto">
-        <img src="img/praias-perto-de-fortaleza-lagoinha-1.jpg" alt="Praia de Lagoinha">
+      </div>
 
-        <div class="card-conteudo">
-            <h3>Praia de Lagoinha</h3>
+    </section>
 
-            <p>Uma das praias mais famosas do Ceará, conhecida pelas dunas e coqueiros.</p>
 
-            <a href="#">Saiba mais</a>
-        </div>
-    </article>
 
-    <article class="card-ponto">
-        <img src="img/praias-perto-de-fortaleza-praia-branca.jpg" alt="Praia Branca">
+    <!-- ==============================
+         SOBRE FORTALEZA
+    =============================== -->
 
-        <div class="card-conteudo">
-            <h3>Praia Branca</h3>
+    <section
+      id="sobre"
+      class="sobre-resumo"
+    >
 
-            <p>Ideal para quem busca tranquilidade e contato com a natureza.</p>
+      <div class="container">
 
-            <a href="#">Saiba mais</a>
-        </div>
-    </article>
+
+        <h2>
+          Sobre Fortaleza
+        </h2>
+
+
+        <p>
+          Fortaleza é uma das principais
+          cidades turísticas do Brasil,
+          conhecida por suas belas praias,
+          rica cultura, hospitalidade e
+          excelente gastronomia.
+        </p>
+
+
+        <p>
+          A capital do Ceará reúne
+          natureza, história, cultura e
+          lazer em um dos destinos mais
+          encantadores do Nordeste brasileiro.
+        </p>
+
+
+        <a
+          href="sobre.html"
+          class="btn-primary"
+        >
+          Conheça Fortaleza
+        </a>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ==============================
+         PONTOS TURÍSTICOS
+    =============================== -->
+
+    <section
+      id="pontos-turisticos"
+      class="pontos-destaque"
+    >
+
+      <div class="container">
+
+
+        <h2>
+          Pontos Turísticos em Destaque
+        </h2>
+
+
+        <p class="section-description">
+          Conheça alguns dos destinos que
+          fazem de Fortaleza um dos principais
+          destinos turísticos do Brasil.
+        </p>
+
+
+
+        <!-- ==========================
+             GRID DE PONTOS
+        =========================== -->
+
+        <div class="grid-pontos">
+
+  <!-- PRAIA DO FUTURO -->
+  <article class="card-ponto">
+
+    <img
+      src="img/pontos-tur/praias/praia-futuro1.jpeg"
+      alt="Praia do Futuro em Fortaleza"
+    >
+
+    <div class="card-conteudo">
+
+      <h3>Praia do Futuro</h3>
+
+      <p>
+        Uma das praias mais conhecidas de Fortaleza,
+        famosa por suas águas e tradicionais
+        barracas de praia.
+      </p>
+
+      <a href="pontos-turisticos.html">
+        Saiba mais
+      </a>
+
+    </div>
+
+  </article>
+
+
+  <!-- PRAIA DE IRACEMA -->
+  <article class="card-ponto">
+
+    <img
+      src="img/pontos-tur/praias/praia-iracema1.jpeg"
+      alt="Praia de Iracema em Fortaleza"
+    >
+
+    <div class="card-conteudo">
+
+      <h3>Praia de Iracema</h3>
+
+      <p>
+        Um dos cartões-postais de Fortaleza,
+        conhecida pelo pôr do sol e pela
+        Ponte dos Ingleses.
+      </p>
+
+      <a href="pontos-turisticos.html">
+        Saiba mais
+      </a>
+
+    </div>
+
+  </article>
+
+
+  <!-- PRAIA DO MEIRELES -->
+  <article class="card-ponto">
+
+    <img
+      src="img/pontos-tur/praias/praia-meireles1.jpeg"
+      alt="Praia do Meireles em Fortaleza"
+    >
+
+    <div class="card-conteudo">
+
+      <h3>Praia do Meireles</h3>
+
+      <p>
+        Uma região bastante movimentada de Fortaleza,
+        com calçadão, feirinha e diversas atrações
+        turísticas.
+      </p>
+
+      <a href="pontos-turisticos.html">
+        Saiba mais
+      </a>
+
+    </div>
+
+  </article>
 
 </div>
 
-          <a href="pages/pontos-turisticos.html">
+
+          <!-- ==========================
+               PRAIA DE IRACEMA
+          =========================== -->
+
+          <article class="card-ponto">
+
+
+            <img
+              src="img/praias/praia-iracema1.jpeg"
+              alt="Praia de Iracema em Fortaleza"
+              loading="lazy"
+            >
+
+
+            <div class="card-conteudo">
+
+
+              <h3>
+                Praia de Iracema
+              </h3>
+
+
+              <p>
+                Um dos cartões-postais de
+                Fortaleza, conhecida pelo
+                pôr do sol e pela Ponte dos
+                Ingleses.
+              </p>
+
+
+              <a
+                href="pontos-turisticos.html"
+                class="card-link"
+              >
+                Saiba mais
+              </a>
+
+
+            </div>
+
+
+          </article>
+
+
+
+          <!-- ==========================
+               PRAIA DO MEIRELES
+          =========================== -->
+
+          <article class="card-ponto">
+
+
+            <img
+              src="img/praias/praia-meireles1.jpeg"
+              alt="Praia do Meireles em Fortaleza"
+              loading="lazy"
+            >
+
+
+            <div class="card-conteudo">
+
+
+              <h3>
+                Praia do Meireles
+              </h3>
+
+
+              <p>
+                Uma região bastante movimentada
+                de Fortaleza, com calçadão,
+                feirinha e diversas atrações
+                turísticas.
+              </p>
+
+
+              <a
+                href="pontos-turisticos.html"
+                class="card-link"
+              >
+                Saiba mais
+              </a>
+
+
+            </div>
+
+
+          </article>
+
+
+        </div>
+
+
+
+        <!-- BOTÃO TODOS OS PONTOS -->
+
+        <div class="ver-mais">
+
+
+          <a
+            href="pontos-turisticos.html"
+            class="btn-primary"
+          >
             Ver todos os pontos turísticos
           </a>
+
+
         </div>
-      </section>
 
-      <section class="cta">
-        <div class="container">
-          <h2>Pronto para conhecer Fortaleza?</h2>
 
-          <p>Explore os melhores destinos e planeje sua próxima viagem.</p>
-
-          <a href="#pontos-turisticos"> Começar agora </a>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <div class="container">
-        <p> Bem-vindo a Fortalezac &copy; Todos os direitos reservados.</p>
       </div>
-    </footer>
-  </body>
+
+    </section>
+
+
+
+    <!-- ==============================
+         CHAMADA PARA AÇÃO
+    =============================== -->
+
+    <section class="cta">
+
+      <div class="container">
+
+
+        <h2>
+          Pronto para conhecer Fortaleza?
+        </h2>
+
+
+        <p>
+          Explore os melhores destinos e
+          planeje sua próxima viagem.
+        </p>
+
+
+        <a
+          href="pontos-turisticos.html"
+          class="btn-primary"
+        >
+          Começar agora
+        </a>
+
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+
+  <!-- ==============================
+       RODAPÉ
+  =============================== -->
+
+  <footer>
+
+    <div class="container">
+
+
+      <p>
+        Bem-vindo a Fortaleza &copy;
+        Todos os direitos reservados.
+      </p>
+
+
+      <nav
+        class="footer-menu"
+        aria-label="Menu do rodapé"
+      >
+
+        <a href="index.html">
+          Início
+        </a>
+
+        <a href="sobre.html">
+          Sobre
+        </a>
+
+        <a href="pontos-turisticos.html">
+          Pontos Turísticos
+        </a>
+
+        <a href="equipe.html">
+          Equipe
+        </a>
+
+        <a href="patrocinadores.html">
+          Patrocinadores
+        </a>
+
+        <a href="contato.html">
+          Contato
+        </a>
+
+      </nav>
+
+
+    </div>
+
+  </footer>
+
+
+
+  <!-- ==============================
+       JAVASCRIPT
+  =============================== -->
+
+  <script src="js/main.js"></script>
+
+
+</body>
+
 </html>
