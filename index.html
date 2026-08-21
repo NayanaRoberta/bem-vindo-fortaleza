@@ -454,7 +454,7 @@
 
 
             <img
-              src="img/praias/praia-iracema1.jpeg"
+              src="img/pontos-tur/praias/praia-iracema1.jpeg"
               alt="Praia de Iracema em Fortaleza"
               loading="lazy"
             >
@@ -499,7 +499,7 @@
 
 
             <img
-              src="img/praias/praia-meireles1.jpeg"
+              src="img/pontos-tur/praias/praia-meireles2.jpeg"
               alt="Praia do Meireles em Fortaleza"
               loading="lazy"
             >
@@ -593,6 +593,44 @@
 
     </section>
 
+    <section class="contato-container">
+      <h2>Fale Conosco / Envie sua Sugestão</h2>
+      <p>Tem dúvidas sobre roteiros ou quer enviar uma sugestão de ponto turístico em Fortaleza? Envie uma mensagem!</p>
+
+  <form id="formContato" novalidate>
+    <!-- Área de Feedback para mensagens de sucesso/erro -->
+    <div id="mensagemFeedback" class="feedback-msg" aria-live="polite"></div>
+
+    <div class="form-group">
+      <label for="nome">Nome Completo:</label>
+      <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+    </div>
+
+    <div class="form-group">
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com">
+    </div>
+
+    <div class="form-group">
+      <label for="assunto">Assunto:</label>
+      <select id="assunto" name="assunto">
+        <option value="">Selecione uma opção...</option>
+        <option value="sugestao">Sugestão de Ponto Turístico</option>
+        <option value="duvida">Dúvida sobre Roteiros</option>
+        <option value="parceria">Parceria/Patrocínio</option>
+        <option value="outro">Outro</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..."></textarea>
+    </div>
+
+    <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+  </form>
+
+</section>
 
   </main>
 
