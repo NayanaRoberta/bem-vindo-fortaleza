@@ -283,8 +283,8 @@ main {
 
 .grid-pontos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
     margin-bottom: 40px;
 }
 
@@ -302,25 +302,28 @@ main {
 
 .card-ponto img {
     width: 100%;
-    height: 240px;
+    height: 180px;
     object-fit: cover;
+    display: block;
 }
 
 .card-conteudo {
-    padding: 25px;
+    padding: 15px;
     display: flex;
     flex-direction: column;
-    flex-grow: 1; /* Ocupa o espaço vazio do card */
+    flex-grow: 1;
 }
 
 .card-conteudo h3 {
     color: var(--primary);
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    font-size: 1rem;
 }
 
 .card-conteudo p {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     color: #555;
+    font-size: 0.9rem;
     flex-grow: 1;
 }
 
@@ -329,8 +332,9 @@ main {
     align-self: flex-start;
     background: var(--primary);
     color: var(--white);
-    padding: 10px 20px;
+    padding: 8px 15px;
     border-radius: 4px;
+    font-size: 0.85rem;
     transition: var(--transition);
 }
 
@@ -423,6 +427,104 @@ footer {
         width: 100%;
     }
 }
+@media (max-width: 1024px) {
+
+    .grid-pontos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .grid-pontos {
+        grid-template-columns: 1fr;
+    }
+
+    .card-ponto img {
+        height: 200px;
+    }
+
+}
+
+.contato-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 24px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #0076a3; /* Ajuste para a cor principal da marca */
+  box-shadow: 0 0 4px rgba(0, 118, 163, 0.3);
+}
+
+.btn-enviar {
+  background-color: #0076a3;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  width: 100%;
+}
+
+.btn-enviar:hover {
+  background-color: #005677;
+}
+
+/* Estilos das mensagens de Feedback */
+.feedback-msg {
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  display: none;
+  font-weight: 500;
+}
+
+.feedback-msg.sucesso {
+  display: block;
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.feedback-msg.erro {
+  display: block;
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
 
 /* =========================================
    QUAIS AJUSTES FORAM FEITOS AQUI?
